@@ -33,14 +33,8 @@ def build_dictionary():
             else:
                 skule_dict[row[0]]= {'facts' : [row[1]], 'skulepedia':row[2]}
 
-    print(skule_dict)
+    #print(skule_dict)
 
-    print(csv_reader)
+    #print(csv_reader)
     return skule_dict
 
-
-
-
-if __name__ == "__main__":
-    print(get_fun_fact("iron ring"))
-   
