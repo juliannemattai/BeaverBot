@@ -45,11 +45,12 @@ message_react_id = 861300988936716328
 blue_heart_role = 'research team'
 green_heart_role = 'mom'
 pink_heart_role = 'events volunteer'
-purple_heart_role = 'inventory volunteer'
+purple_heart_role = 'inventory team'
 
 def choose_role(guild, payload):
+    role = None
     if payload.emoji.name == '💙':
-        #print("blue")
+        print("blue")
         #print(guild.roles)
         role = discord.utils.get(guild.roles, name = blue_heart_role)
             
@@ -64,6 +65,8 @@ def choose_role(guild, payload):
     elif payload.emoji.name =="💜":
         #print("purple")
         role = discord.utils.get(guild.roles,name = purple_heart_role)
+    
+        
     
     return role
 
