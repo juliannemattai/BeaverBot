@@ -31,7 +31,7 @@ async def on_message(message):
         print("wrong channel")
         return
     if message.content.startswith('$hello'):
-        await message.channel.send("Hello! My name is Standford the Beaver. Ask me about Skule History by using the command $funfact followed by a topic you want to know more about")
+        await message.channel.send("Hello! My name is Sandford the Beaver. Ask me about Skule History by using the command $funfact followed by a topic you want to know more about")
     
     elif message.content.startswith("$funfact"):
         subject = message.content.replace('$funfact','').strip()
@@ -43,7 +43,7 @@ async def on_message(message):
 ##PARAMETERS + CUSTOMIZATION##
 message_react_id = 861300988936716328
 blue_heart_role = 'research team'
-green_heart_role = 'mom'
+green_heart_role = 'none'
 pink_heart_role = 'events volunteer'
 purple_heart_role = 'inventory team'
 
