@@ -124,6 +124,4 @@ async def on_raw_reaction_remove(payload):
 
     #print("Goodbye world")
 
-
-
 client.run(os.getenv('BOT_TOKEN'))
